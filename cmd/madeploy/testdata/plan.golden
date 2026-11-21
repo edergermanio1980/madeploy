@@ -1,0 +1,26 @@
+PLANO — production (/var/www/sisvita)
+  commit: 510230a327 → 5d7ed2faf0 (main)
+
+Arquivos (3 a enviar, 1 a remover)
+  A app/control/AgendaForm.php
+  M index.php
+  R app/control/novo/PacienteList.php ← app/control/PacienteList.php
+  D lib/old.js
+
+!! DRIFT: 1 arquivo(s) alterado(s) no servidor fora do madeploy
+  modified menu.xml
+
+Migrações
+  sisvita: migrations/20261118093000_add_apelido.sql (pending)
+
+Permissões
+  chmod 0644 em 3 arquivo(s)
+  tmp gravável pelo grupo www-data (ACL ou setgid 2775)
+
+Hooks depois da troca
+  sudo -n systemctl reload php8.2-fpm
+
+Healthcheck: https://example.test/index.php?class=LoginForm
+
+Avisos
+  aviso de exemplo
